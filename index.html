@@ -1,0 +1,853 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!-- <meta http-equiv="imagetoolbar" content="no"> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="naver-site-verification" content="6f50db08a0bfa29cc2a65f1edcca23a7c6a5dae4"/>
+
+<title>자이브솔루션즈</title>
+	<script>
+	//접속 기기 확인 후 해당 버전으로 
+	   var mobile_keys = new Array('iPhone','iPod','Android','BlackBerry','Windows Phone','Windows CE','LG','MOT','SAMSUNG','SonyEricsson','Nokia');
+	   if(document.URL.match('move_pc_screen')) mobile_keys = null; // URL 파라메타에 'move_pc_screen' 가 포함되어 있을땐 적용안함
+	   for(i in mobile_keys){
+		if(navigator.userAgent.match(mobile_keys[i]) != null){
+		 location.href = "../jive/mobile/index.html"; // 모바일 홈 연결 주소
+		 break;
+		}
+	   }
+	</script>
+<link rel="stylesheet" href="../jive/css/default.css">
+<link rel="stylesheet" href="../jive/css/latest_style.css">
+<link rel="stylesheet" href="../jive/css/default_board.css">
+<link rel="stylesheet" href="../jive/css/default_contents.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+<!--//홈페이지 메인 슬라이드, 쇼핑몰 전체메뉴버튼에 사용-->
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<!--홈페이지 메인 슬라이드, 쇼핑몰 전체메뉴버튼에 사용//-->
+
+<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 --> 
+<script src="//wcs.naver.net/wcslog.js"> </script> 
+<script> 
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_4ba12b8078f4";
+if (!_nasa) var _nasa={};
+wcs.inflow();
+wcs_do(_nasa);
+</script>
+
+<script src="../jive/js/jquery.bxslider.js"></script>
+<script src="../jive/js/jquery.menu.js"></script>
+<script src="../jive/js/pub.js"></script>
+
+
+</head>
+
+<style type="text/css">
+	#container{width:100% !important; padding-bottom:0; margin:0px auto !important}
+	#ft{margin-top:0;}
+
+	.switch_wr{display:inline-block; vertical-align:top; position:relative; font-size:18px; margin-left:5px;}
+	.switch-a{color:#fff;}
+	.switch-b{color:#fff; margin-left:50px;}
+	.toggle-outside{background: rgba(255,255,255,0.7); position: absolute; width: 50px; top:4px; left: 19px; cursor:pointer; display:inline-block; width:40px; height:17px; border-radius:20px;}
+	.toggle-outside:after{content:''; position:relative; left:5px; top:49%; width:30px; height:2px; background:#525051; display:block; z-index:1;}
+	.toggle-inside{height: 12px; width: 12px; background:#525051; border-radius:20px; position:absolute; top:3px; left:5px; transition: 0.25s ease all;}
+	.toggle-inside-r{left:auto; right:5px; transition: 0.25s ease all;}
+
+</style>
+
+<body>
+<!-- 상단 시작 { -->
+<div id ="hd_wrap">
+	<div id="hd">
+		<h1 id="hd_h1">자이브솔루션즈</h1>
+
+		<div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
+
+		<div id="hd_wrapper_top">
+			<div id="hd_wrapper">
+				<nav class="gnb" id="topBar">
+					<h2 class="blind">메인메뉴</h2>
+					<div class="gnb_wrap">
+
+						<div id="logo2">
+							<a href="javascript:;"><img src="../jive/img/logo.png" alt="자이브솔루션즈"></a>
+						</div>
+
+						<div class="jive_shop">
+							<a href="javascript:;"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+							<div class="switch_wr">
+								<span class="switch-a"><i class="fa fa-home"></i></span>
+								<span class="switch-b"><i class="fa fa-shopping-cart"></i></span>
+								<a href="javascript:;" class="toggle-outside"><span class="toggle-inside"></span></a>
+							</div>
+						</div>
+
+						<div id="tnb">
+							<ul>
+								<li><a href="javascript:;">회원가입</a></li>
+								<li><a href="javascript:;"><b>로그인</b></a></li>
+							</ul>
+						</div>
+
+						<ul class="gnb_1dul">
+														<li class="gnb_1dli">
+								<a href="javascript:;" target="_self" class="gnb_1da">3D SOLUTIONS</a>
+
+							<ul class="gnb_2dul">
+								<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">envisionTEC</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">Rize</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">Leapfrog</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">Nanoscribe</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">HP 3D Scanner</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">ZG 3D Scanner</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">Nikon CT Scanner</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">Uniz</a>
+								</li>
+							</ul>
+							</li>
+														<li class="gnb_1dli">
+								<a href="javascript:;" target="_self" class="gnb_1da">SERVICE BUREAU</a>
+
+							<ul class="gnb_2dul">
+								<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">서비스 안내</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">포트폴리오</a>
+								</li>
+							</ul>
+							</li>
+														<li class="gnb_1dli">
+								<a href="javascript:;" target="_self" class="gnb_1da">RESOURCES</a>
+
+							<ul class="gnb_2dul">
+								<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">Case Study</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">Downloads</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">Materials</a>
+								</li>
+							</ul>
+							</li>
+														<li class="gnb_1dli">
+								<a href="javascript:;" target="_self" class="gnb_1da">ABOUT US</a>
+
+							<ul class="gnb_2dul">
+								<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">회사소개</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">News</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">Contact</a>
+								</li>
+															<li class="gnb_2dli">
+									<a href="javascript:;" target="_self" class="gnb_2da">온라인 쇼핑몰</a>
+								</li>
+							</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- } 상단 끝 -->
+<hr>
+
+<!-- 콘텐츠 시작 { -->
+<div id="wrapper">
+	<div id="container_wr">
+				<div id="container">
+
+<div class="main-visual">
+	<div class="main-banner__btn main-banner__btn--prev"><i class="fa fa-chevron-left"></i></div>
+	<div class="main-banner__btn main-banner__btn--next"><i class="fa fa-chevron-right"></i></div>
+
+	<div class="main-banner">
+		<ul id="bnSlider">
+						<li>
+									<a href="javascript:;"  target="_self" >						<img src="../jive/img/banner1.jpg" alt="자이브솔루션즈가 Addivite Manufacturing Solution의 새로운 기준을 제시합니다. 제품 구입부터 유지보수, 기술지원에 이르는 전문적인 컨설팅과 효율적인 솔루션 구성">
+					</a>							</li>
+						<li>
+									<a href="javascript:;"  target="_self" >						<img src="../jive/img/banner2.jpg" alt="시제품 제작(Rapid Prototyping) 역설계(Reverse Engineering)  및 품질검사(Inspection) CT(Computed Tomograhy) 스캔 Report 자이브솔루션즈가 복잡한 프로세스, 각 솔루션별 제품 구입 및 유지에 대한 부담을 해결해 드립니다.">
+					</a>							</li>
+						<li>
+									<a href="javascript:;"  target="_self" >						<img src="../jive/img/banner3.jpg" alt="자이브솔루션즈는 최고의 제품을 정확한 컨설팅과 함께 제공합니다. 제품 구입부터 유지보수, 기술지원에 이르는 전문적인 컨설팅과 효율적인 솔루션 구성">
+					</a>							</li>
+					</ul>
+	</div>
+
+</div>
+
+<div class="main-center">
+
+	<div class="mc_body">
+		<h3>3D <span class="c_red">SOLUTIONS</span></h3>
+		<div class="h3_sub">Additive Manufacturing Industry</div>
+		<p>산업용ㆍ전문가용 3D 프린터 및 3D 스캐너 장비, 하드웨어와 소프트웨어를 포함하는<span class="n_line">전문 컨설팅과 솔루션을 제공하며, 철저한 사전ㆍ사후 서비스를 제공합니다.</span></p>
+		<div class="solution_slide">
+			<ul>
+								<li><a href="javascript:;" class="3dsol_tab on" rel="3dsol_tab0" >envisionTEC</a></li>
+								<li><a href="javascript:;" class="3dsol_tab " rel="3dsol_tab1" >Rize</a></li>
+								<li><a href="javascript:;" class="3dsol_tab " rel="3dsol_tab2" >Admatec</a></li>
+								<li><a href="javascript:;" class="3dsol_tab " rel="3dsol_tab3" >Leapfrog</a></li>
+								<li><a href="javascript:;" class="3dsol_tab " rel="3dsol_tab4" >Nanoscribe</a></li>
+								<li><a href="javascript:;" class="3dsol_tab " rel="3dsol_tab5" >HP 3D Scanner</a></li>
+								<li><a href="javascript:;" class="3dsol_tab " rel="3dsol_tab6" >ZG 3D Scanner</a></li>
+								<li><a href="javascript:;" class="3dsol_tab " rel="3dsol_tab7" >Nikon CT Scanner</a></li>
+								<li><a href="javascript:;" class="3dsol_tab " rel="3dsol_tab8" >UNIZ</a></li>
+							</ul>
+
+			
+			<div class="solution_slide_con " id="3dsol_tab0">
+				
+<ul class="list_slider ">
+<!-- solution_slide_con{ -->
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="Viridis 3D">
+            <img src="../jive/img/thumb-1028885905_oBNjZk25_1131de0ad41d5ffc7a843d3c8d64d56bd4b305d7_250x200.png" alt="로봇자동화 시스템, VIRIDIS, VIRIDIS 3D, SAND CASTING, RAM, 사형주조, 엔비젼텍, envisiontec, 엔비전텍, 비리디스"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>Viridis 3D</dt>
+        <dd>스마트팩토리를 실현하는 사형주물 3D프린팅 로봇자동화 시스템</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="3SP Family">
+            <img src="../jive/img/thumb-1028885905_dFoS83Nt_5dc91b9831c35cfe08e3bd20b4bd22535d38bc5f_250x200.png" alt="3SP, SLA, envisiontec, 엔비젼텍, 엔비전텍, 에스엘에이, 3에스피, 3d printer"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>3SP Family</dt>
+        <dd>산업용 중대형 제품의 RP(Rapid Prototyping)에 최적화</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="Perfactory Family">
+            <img src="../jive/img/thumb-2038802310_7y0Kg9m3_d4f73f8603dbf2065ae7febeef258347260199c7_250x200.png" alt="Perfactory, DLP, 3D Printer, envisiontec, 엔비젼텍, 엔비전텍, 3d 프린터, 퍼펙토리, P4, P3"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>Perfactory Family</dt>
+        <dd>현존하는 DLP 3D프린터 중 가장 높은 정밀도와 해상도</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="Desktop Family">
+            <img src="../jive/img/thumb-1028885905_r39XcUF0_48dc47225afed0e8c590707e9a79878ba1168000_250x200.png" alt="DLP, 3D PRINTER, desktop, desktop 3d printer, desktop family, vida, micro advantage plus, micro advantage, envisiontec, 엔비젼텍, 엔비전텍, 데스크탑 3D 프린터, 3D 프린터"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>Desktop Family</dt>
+        <dd>긴 수명, 높은 출력 신뢰도, 최고의 가성비를 자랑하는 DLP솔루션</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="cDLM Family">
+            <img src="../jive/img/thumb-1028885905_noGCUj4R_c3474d615c9d2049e62a12db47ab48b3fb2df657_250x200.png" alt="DLP, 3D printer, cdlm, envisiontec, vida, vida cdlm, 엔비젼텍, 엔비전텍, 3D 프린터"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>cDLM Family</dt>
+        <dd>DLP의 진화된 cDLM 특허 기술로 고해상도와 빠른 출력 속도 실현</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="3D-Bioplotter">
+            <img src="../jive/img/thumb-2038802310_MlITXc8m_2b2d77f0f865305f602e84e71806c3846152a860_250x200.png" alt="3D Bioprinter, 3d printer, 3d bioplotter, envisiontec, 엔비젼텍, 엔비전텍, 3D 프린터, 바이오 3D 프린터, 바이오 프린터"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>3D-Bioplotter</dt>
+        <dd>의학 연구 및 제조 분야(Tissue Engineering)에 독보적인 솔루션</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="SLCOM">
+            <img src="../jive/img/thumb-990425539_AqKZzYt9_068171cd95e7d5677e19472cdd207e31a9696076_250x200.png" alt="envisiontec, 3d printer, slcom, composite fiber filled, 엔비전텍, 엔비젼텍, 3D 프린터, "  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>SLCOM</dt>
+        <dd>업계 최초이자 유일한 산업용 대형 복합재 3D 프린터</dd>
+    </dl>
+        </li>
+</ul>
+			</div>
+
+			
+			<div class="solution_slide_con hidden" id="3dsol_tab1">
+				
+<ul class="list_n_slider ">
+<!-- solution_slide_con{ -->
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="XRIZE">
+            <img src="../jive/img/thumb-3732271268_pWfGlPH6_e72331190862b9279f42dbcdc0dda49a345ed662_250x200.png" alt="xrize, 3d printer, rize, full color, fdm, hybrid 3d printer, 라이즈, 엑스라이즈, 3D 프린터, 풀컬러 3D 프린터, 풀칼라 3D 프린터"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>XRIZE</dt>
+        <dd>최소의 후가공만이 필요한, 기능성 프로토타입에 특화된 최초의 풀컬러 산업용 3D 프린터</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="Rize One">
+            <img src="../jive/img/thumb-1028885905_CMQrHsXo_fea32d49acdb803ecea5afa5b77dd554deb8497e_250x200.png" alt="rize, rize one, 3d printer, fdm, hybrid 3d printer, 라이즈, 라이즈원, 3D 프린터, 하이브리드 3D 프린터"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>Rize One</dt>
+        <dd>후처리가 필요 없는 유일한 친환경 산업용 3D 프린팅 솔루션</dd>
+    </dl>
+        </li>
+</ul>
+			</div>
+
+			
+			<div class="solution_slide_con hidden" id="3dsol_tab2">
+				
+<ul class="list_n_slider ">
+<!-- solution_slide_con{ -->
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="Admaflex 130">
+            <img src="../jive/img/thumb-1028885905_uK16BXHQ_0aec74d80cc9bda48f129910d2e2ff0bb97654b7_250x200.png" alt="dlp, ceramic 3d printer, seramic, zirconia, fused silica, admaflex, 3d printer, 세라믹 3d 프린터, 지르코니아, 3d 프린터, 아드마플렉스, 아드마텍"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>Admaflex 130</dt>
+        <dd>세라믹 3D 프린팅의 고속 정밀 인쇄 솔루션</dd>
+    </dl>
+        </li>
+</ul>
+			</div>
+
+			
+			<div class="solution_slide_con hidden" id="3dsol_tab3">
+				
+<ul class="list_n_slider ">
+<!-- solution_slide_con{ -->
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="Bolt Pro">
+            <img src="../jive/img/thumb-1028885905_t8qX6jxC_aa340db52096258e863d13ad9894adc99376804e_250x200.png" alt="Leapfrog, 리프로그, 볼트프로, bolt pro, 3d 프린터, fdm"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>Bolt Pro</dt>
+        <dd>독립 듀얼노즐 탑재한 사무실에서 사용 가능한 3D 프린팅 솔루션</dd>
+    </dl>
+        </li>
+</ul>
+			</div>
+
+			
+			<div class="solution_slide_con hidden" id="3dsol_tab4">
+				
+<ul class="list_n_slider ">
+<!-- solution_slide_con{ -->
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="Quantum X">
+            <img src="../jive/img/thumb-2038802310_6xSMlwQO_21de95c8c4c3ec3808a69d667e262ea465e623da_250x200.jpg" alt="nanoscribe, 나노스크라이브, 나노스크라입, 3d printer, nano 3d printer, 나노 3d 프린터, 나노 사이즈 3d 프린터, 마이크로 3d 프린터, QuantumX,퀀텀,퀀텀X"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>Quantum X</dt>
+        <dd>2.5D 마이크로단위 고속 출력에 특화 된 3D 프린팅 솔루션</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="Photonic Professional GT2">
+            <img src="../jive/img/thumb-3732271268_uscV9Afl_ba6fbc6127f9ee8689a73046938d134dde86f535_250x200.png" alt="nanoscribe, 나노스크라이브, 나노스크라입, 3d printer, nano 3d printer, 나노 3d 프린터, 나노 사이즈 3d 프린터, 마이크로 3d 프린터, professional GT2, GT2"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>Photonic Professional GT2</dt>
+        <dd>마이크로미터 크기로 출력 가능한 3D 프린팅 솔루션</dd>
+    </dl>
+        </li>
+</ul>
+			</div>
+
+			
+			<div class="solution_slide_con hidden" id="3dsol_tab5">
+				
+<ul class="list_n_slider ">
+<!-- solution_slide_con{ -->
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="HP PRO S2 & PRO S3">
+            <img src="../jive/img/thumb-3732271268_DPlEgXqh_a637749b19090f2f3c8fc32aa3bac5fd52193b4d_250x200.png" alt="HP, HP 3D SCANNER, HP 3D 스캐너, 3D 스캐너, PRO S2, PRO S3, 프로 S2, 프로 S3"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>HP PRO S2 & PRO S3</dt>
+        <dd>현실의 디지털화, 360도 3D 모델로 생성하는 HP 3D 스캐너</dd>
+    </dl>
+        </li>
+</ul>
+			</div>
+
+			
+			<div class="solution_slide_con hidden" id="3dsol_tab6">
+				
+<ul class="list_slider ">
+<!-- solution_slide_con{ -->
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="AScan ™">
+            <img src="../jive/img/thumb-3732271268_xEc21IKh_5ca450e85647ae82d214a72b53627635164f56e3_250x200.png" alt="ZG, ZG 3D Scanner, Ascan, White light"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>AScan ™</dt>
+        <dd>고정밀 지능형 White Light 3D 스캐너</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="GScan">
+            <img src="../jive/img/thumb-3732271268_eVM26zBG_73d418c90ca2993326bfee1c094b8e16451857ab_250x200.png" alt="ZG, ZG 3D Scanner, GScan, 칼라 3d 스캐너, 컬러 3d 스캐너, 풀컬러 3d 스캐너, 풀칼라 3d 스캐너"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>GScan</dt>
+        <dd>Smart Full-Color 3D 스캐너</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="ZGScan Smart Handheld laser 3D Scanner">
+            <img src="../jive/img/thumb-3732271268_KY5vD7Bm_5d81c52e18d61076b718e94c2f196085cbbae7cc_250x200.png" alt="ZG, ZG 3D Scanner, Handheld Laser 3D Scanner,핸드헬드 레이져 3D 스캐너, 휴대용 3D 스캐너"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>ZGScan Smart Handheld laser 3D Scanner</dt>
+        <dd>쉽고 빠르고 정확한 스마트한 핸드헬드 레이져 3D 스캐너</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="RigelScan™">
+            <img src="../jive/img/thumb-3732271268_PSKIOTN4_cccdf0ccf7aa5db0a9106453984034bb40324809_250x200.png" alt="ZG, ZG 3D Scanner, RigelScan, Handheld Blue Laser 3D 스캐너, blue laser 3d scanner, blue laser 3d 스캐너"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>RigelScan™</dt>
+        <dd>Handheld Blue Laser 3D 스캐너</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="AltairScan™">
+            <img src="../jive/img/thumb-3732271268_Vx4s9udA_47e31e3fdeee8605fb9ced564952dae2a8ab7a2f_250x200.png" alt="ZG, ZG 3D Scanner, AltairScan, Smart Flash Laser 3D 스캐너, blue laser 3d scanner, blue laser 3d 스캐너"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>AltairScan™</dt>
+        <dd>Smart Flash Laser 3D 스캐너</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="HyperScan Optical tracking 3D Scanner">
+            <img src="../jive/img/thumb-1028885905_4PGkw1iM_55dd6643396cfde8933e6ae7337c6ecc71f4ed27_250x200.png" alt="ZG, ZG 3D Scanner, HyperScan 3D Scanner,Optical Tracking 스캐너, 3d 스캐너, 옵티컬 트래킹"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>HyperScan Optical tracking 3D Scanner</dt>
+        <dd>포지셔닝 타겟 없이 가능한 Optical Tracking 3D 스캐너</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="ZGFree Box">
+            <img src="../jive/img/thumb-3732271268_IJdU4jnR_faa74386072c513c653c6fa46832cbbd8507496b_250x200.png" alt="ZG, ZG 3D Scanner, ZG CABLE BOX, "  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>ZGFree Box</dt>
+        <dd>모든 ZG시리즈 3D스캐너에 호환 가능한 0.85KG의 무선 배터리</dd>
+    </dl>
+        </li>
+</ul>
+			</div>
+
+			
+			<div class="solution_slide_con hidden" id="3dsol_tab7">
+				
+<ul class="list_n_slider ">
+<!-- solution_slide_con{ -->
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="XT H Series">
+            <img src="../jive/img/thumb-990425539_slXd23MO_17e235ad365f586184abf18a3234b1bdcaf264aa_250x200.png" alt="CT, CT Scanner, NIKKON, 니콘, 니콘 CT 스캐너, XT H 시리즈, 산업용 CT 스캐너"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>XT H Series</dt>
+        <dd>초고속 CT처리 및 실시간 시각화에 최적화된 산업용 CT 솔루션</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="XT V Series">
+            <img src="../jive/img/thumb-990425539_i5EULVzh_901097cf50093113416b750af49495d8b2fbe67f_250x200.png" alt="CT, CT Scanner, NIKKON, 니콘, 니콘 CT 스캐너, XT V  시리즈, 산업용 CT 스캐너"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>XT V Series</dt>
+        <dd>PCB와 같은 평평하고 넓은 형태의 피검물에 최적화된 솔루션</dd>
+    </dl>
+        </li>
+</ul>
+			</div>
+
+			
+			<div class="solution_slide_con hidden" id="3dsol_tab8">
+				
+<ul class="list_n_slider ">
+<!-- solution_slide_con{ -->
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="Slash DJ2">
+            <img src="../jive/img/thumb-2038802310_1gNQXWfl_60d534e140a7d2cb1652e3fe971f553adafb074f_250x200.png" alt="Slash DJ2"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>Slash DJ2</dt>
+        <dd>덴탈, 주얼리 분야에 특화된 3D 프린터</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="zSLTV-15 UDP 3D Printer">
+            <img src="../jive/img/thumb-2038802310_3h96lL0r_196a9147cb45fb16b5e06d57946939231c47e486_250x200.png" alt="zSLTV-15 UDP"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>zSLTV-15 UDP 3D Printer</dt>
+        <dd>큰 제작 사이즈와 빠른 출력 속도를 가진 산업용 SLA 프린터</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="SLASH PLUS (UDP) 3D Printer">
+            <img src="../jive/img/thumb-2038802310_DdFSqanc_e3c67d88fd099cf4ad85b133f046c2c41b77f37c_250x200.png" alt="SLASH PLUS (UDP) "  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>SLASH PLUS (UDP) 3D Printer</dt>
+        <dd>가성비 높은, 쉽고 빠른 제작이 가능한 DLP 3D Printer</dd>
+    </dl>
+        </li>
+    <li>
+        <div class="img_area">
+        <a href="javascript:;" title="SLASH PRO (UDP) 3D Printer">
+            <img src="../jive/img/thumb-2038802310_OtSlRe5b_12ef9ba1dd8762891a181e9e9a657261c4475afa_250x200.png" alt="SLASH PRO (UDP)"  />
+        </a>
+    </div>
+    <dl class="mate_info">
+        <dt>SLASH PRO (UDP) 3D Printer</dt>
+        <dd>가성비 높은 DLP 3D Printer. 출력 가능 높이 최대 400mm에 이르며 UDP 모드 지원</dd>
+    </dl>
+        </li>
+</ul>
+			</div>
+
+			
+
+		</div>
+	</div>
+
+	<div class="mc_body case_body">
+		<h3>CASE <span class="c_red">STUDY</span></h3>
+		<p>3D Solutions의 다양한 활용 사례를 소개합니다.<a href="javascript:;" class="main_more">전체보기&nbsp;&nbsp;<i class="fa fa-plus"></i></a></p>
+
+		
+    <div class="case_view">
+            <div>
+            <a href="javascript:;">
+            <img src="../jive/img/thumb-3731020024_6VzCEI8G_9f5f8095590f1beaa57f1d29a9fc24573c9885a4_528x248.png" alt="envisiontec, 엔비젼텍, 엔비전텍, dlp, desktop 3d printer, 3d 프린터, aureus, jewelry, 쥬얼리, 보석, direct casting, 다이렉트 캐스팅" >            남아프리카 보석제조사 Chandlers [Desktop Family]            <span class="case_txt">남아프리카 보석제조사 Chandlers [Desktop Family]</span>
+            </a>
+        </div>
+            <div>
+            <a href="javascript:;">
+            <img src="../jive/img/thumb-3732271268_3olyu5Zh_f2174f6aad23cae98ea62ba6727ebbe705886db4_528x248.png" alt="Hazleton Casting, sand casting, 사형주조, viridis 3d, 비리디스, envisiontec, 엔비젼텍, 엔비전텍, 헤즐턴 캐스팅, 샌드 캐스팅" >            미국 Hazleton Casting [Viridis 3D]            <span class="case_txt">미국 Hazleton Casting [Viridis 3D]</span>
+            </a>
+        </div>
+            </div>
+
+</div>
+	</div>
+
+	<div class="mc_body">
+		<h3>service <span class="c_red">bureau</span></h3>
+		<p>디자인 파일을 의뢰하시면 시제품 제작(Rapid Prototyping), 목업(Mock up), 컨셉디자인 서비스를 제공합니다.<br>역설계(Reverse Engineering), 치수검사(Inspection) 및 디자인 서비스도 제공해 드립니다.</p>
+		<div class="service_con">
+			<ul>
+				<li class="service_con1">
+					<span class="c_red">STEP.1</span>
+					<span>STL파일 또는 이미지 첨부하여 서비스 견적의뢰</span>
+				</li>
+				<li class="service_con2">
+					<span class="c_red">STEP.2</span>
+					<span>사용용도, 제작방식, 소재 및 후처리 과정 상담 협의</span>
+				</li>
+				<li class="service_con3">
+					<span class="c_red">STEP.3</span>
+					<span>견적 최종 합의 후, 제작/서비스를 진행하며 서비스 및 시제품 수령</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="mc_body">
+		<div class="service_slide">
+			<div class="main-banner2">
+				<div class="cbtn cbtn_prev"><i class="fa fa-chevron-left"></i></div>
+				<div class="cbtn cbtn_next"><i class="fa fa-chevron-right"></i></div>
+				<ul id="bnSlider2-1">
+											<li style="border:1px solid #ddd">
+							 <a href='javascript:;'><img src="../jive/img/thumb-1028885905_QSjq3gYs_bc0cb6528884f94104f2f9795ee6c52fd7bd72ec_228x213.jpg" alt=""></a>
+						</li>
+											<li style="border:1px solid #ddd">
+							 <a href='javascript:;'><img src="../jive/img/thumb-1028885905_KygT7i9G_47871f87a81d910c97c42332057332d536f877b4_228x213.png" alt=""></a>
+						</li>
+											<li style="border:1px solid #ddd">
+							 <a href='javascript:;'><img src="../jive/img/thumb-1028885905_rNDZUc9e_4192c8804d2943acedd965b40417bd2b622fc0bd_228x213.jpg" alt=""></a>
+						</li>
+											<li style="border:1px solid #ddd">
+							 <a href='javascript:;'><img src="../jive/img/thumb-1028885905_k028rsWT_d683ad0e159b029ca2fde110ca720a368b4ab4fe_228x213.png" alt=""></a>
+						</li>
+											<li style="border:1px solid #ddd">
+							 <a href='javascript:;'><img src="../jive/img/thumb-1028885905_UoInpbN0_877d1724b85b7a64bb03e04f8b0a56a46481f459_228x213.png" alt=""></a>
+						</li>
+											<li style="border:1px solid #ddd">
+							 <a href='javascript:;'><img src="../jive/img/thumb-1028885905_Gqz62Wb8_032b8336a0d741e2620297c47330fc1734a0035c_228x213.jpg" alt=""></a>
+						</li>
+											<li style="border:1px solid #ddd">
+							 <a href='javascript:;'><img src="../jive/img/thumb-1028885905_ZkHSBvsa_962b0685e26fc3e4ca03dc5a11ce4253ddcbf868_228x213.png" alt=""></a>
+						</li>
+											<li style="border:1px solid #ddd">
+							 <a href='javascript:;'><img src="../jive/img/thumb-1028885905_0tDdbuCj_06d30dda8189eca5a28ba822646d292fb53eec9b_228x213.png" alt=""></a>
+						</li>
+											<li style="border:1px solid #ddd">
+							 <a href='javascript:;'><img src="../jive/img/thumb-1028885905_YKrlxJ8Z_8025b2f42953d027469b7c75dfcc68907438339d_228x213.png" alt=""></a>
+						</li>
+									</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="mc_body">
+		<h3>JIVE <span class="c_red">SOLUTIONS</span></h3>
+		<img src="../jive/img/mc_body4_img.png" alt="H/W와 S/W를 포함하는 3D SOLUTIONS PrinterㆍScanner, 교육 및 기술지원을 통한 지속적인 지원서비스 Technical Suppport, Service Bureau 시제품제작 및 역설계, Inspection Report (CT/#D SCAN)" style="padding-top:30px;">
+		<p class="solution_txt"><strong>Additive Manufacturing Solution</strong>의<span class="n_line">새로운 기준을 제시해 드리겠습니다.</span></p>
+	</div>
+
+
+</div>
+
+
+<div class="main-bottom">
+	<div class="main-bottom_body">
+
+		<div class="late_box1">
+			<div class="bbs1">
+<div class="lat">
+    <h3 class="b_tit"><a href="javascript:;">NEWS</a></h3>
+	<div class="news_img">
+		<img src='../jive/img/thumb-cb057c23ec1184949d5a9ef3c161cd44_1569216005_5337_200x145.png' style='float:left;' /><a href="javascript:;"> 3D Printing Korea 9월호 &#034;3D 나노-마이크로 … </a>		<span class="news_txt"><a href="javascript:;">3D Printing Korea 9월호에&nbsp;(주)자이브솔루션즈 기고문이 메인 표지에 실렸습니…</a></span>
+		<span class="news_date">09-23</span>
+	</div>
+    <ul>
+            <li>
+            <a href="javascript:;"> [2019 창원 TCT 참가] 자이브솔루션즈 부스번호 C31</a> 
+            <span class="lt_date">08-27</span>
+        </li>
+            <li>
+            <a href="javascript:;"> [Nanoscribe] 최첨단 초소형 적층가공 기술의 집약, …</a> 
+            <span class="lt_date">07-22</span>
+        </li>
+            <li>
+            <a href="javascript:;"> [Nanoscribe] LASER World of Photon…</a> 
+            <span class="lt_date">07-22</span>
+        </li>
+            <li>
+            <a href="javascript:;"> 자이브솔루션즈, 선진 금속적층 품질관리 국내 확산 선도</a> 
+            <span class="lt_date">06-26</span>
+        </li>
+            </ul>
+    <a href="javascript:;" class="lt_more"><span class="sound_only">EVENTS</span><i class="fa fa-plus" aria-hidden="true"></i><span class="sound_only"> 더보기</span></a>
+
+</div>
+</div>
+		</div>
+		<div class="late_box2">
+			<div class="bbs1">
+<div class="pic_lt_event">
+    <h3 class="b_tit"><a href="javascript:;">EVENTS</a></h3>
+    <ul>
+            <li>
+            <a href="javascript:;" class="lt_img"><img src="../jive/img/thumb-2038802310_frBzClUk_9176769c671bbd532312262f9c089c5a1c709270_528x248.jpg" alt="" ></a>
+                        <!-- <span class="lt_date">08-21</span> -->
+			<a href="javascript:;" class="events_more">자세히보기</a>
+        </li>
+            </ul>
+    <a href="javascript:;" class="lt_more"><span class="sound_only">EVENTS</span><i class="fa fa-plus" aria-hidden="true"></i><span class="sound_only"> 더보기</span></a>
+
+</div>
+</div>
+		</div>
+	</div>
+
+	<div class="main-bottom_tail1">
+		<form name="newsletter_request" method="post">
+		<div class="newsletter"><span>뉴스레터 정기구독&nbsp;&nbsp;|&nbsp;&nbsp;</span>3D 프린팅 업계 최신 동향, 제공 관련 소식 등 유용한 정보를 전송해 드립니다. <input type="email" name="email" class="email" required id="letter_mail" placeholder="E-mail 주소">
+		<input type="submit" id="letter_btn" value="신청하기"></div>
+		</form>
+	</div>
+
+
+	<div class="main-bottom_tail2">
+		<div class="logo_wrap">
+			<ul>
+				<li><img src="../jive/img/web_foot-makers.png" alt="envionTec, rize, ADMATEC, Leapfrog, nanoscribe, hp, ZG, CT Scanner" ></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	</div>
+	</div>
+
+</div>
+<!-- } 콘텐츠 끝 -->
+
+<hr>
+
+<!-- 하단 시작 { -->
+<div id="ft">
+	<div id="ft_wr">
+		<div id="ft_catch">
+			<div id="ft_wr2">
+				<div class="ft_wr2_left">
+					<ul class="gnb_al_ul">
+												<li class="gnb_al_li">
+							<a href="javascript:;" target="_self" class="gnb_al_a">3D SOLUTIONS</a>
+							<ul>
+								<li><a href="javascript:;" target="_self"> envisionTEC</a></li>
+															<li><a href="javascript:;" target="_self"> Rize</a></li>
+															<li><a href="javascript:;" target="_self"> Leapfrog</a></li>
+															<li><a href="javascript:;" target="_self"> Nanoscribe</a></li>
+															<li><a href="javascript:;" target="_self"> HP 3D Scanner</a></li>
+															<li><a href="javascript:;" target="_self"> ZG 3D Scanner</a></li>
+															<li><a href="javascript:;" target="_self"> Nikon CT Scanner</a></li>
+															<li><a href="javascript:;" target="_self"> Uniz</a></li>
+							</ul>
+						</li>
+												<li class="gnb_al_li">
+							<a href="/img/on2_bg.png" target="_self" class="gnb_al_a">SERVICE BUREAU</a>
+							<ul>
+								<li><a href="javascript:;" target="_self"> 서비스 안내</a></li>
+															<li><a href="javascript:;" target="_self"> 포트폴리오</a></li>
+							</ul>
+						</li>
+												<li class="gnb_al_li">
+							<a href="javascript:;" target="_self" class="gnb_al_a">RESOURCES</a>
+							<ul>
+								<li><a href="javascript:;" target="_self"> Case Study</a></li>
+															<li><a href="javascript:;" target="_self"> Downloads</a></li>
+															<li><a href="javascript:;" target="_self"> Materials</a></li>
+							</ul>
+						</li>
+												<li class="gnb_al_li">
+							<a href="javascript:;" target="_self" class="gnb_al_a">ABOUT US</a>
+							<ul>
+								<li><a href="javascript:;" target="_self"> 회사소개</a></li>
+															<li><a href="javascript:;" target="_self"> News</a></li>
+															<li><a href="javascript:;" target="_self"> Contact</a></li>
+															<li><a href="javascript:;" target="_self"> 온라인 쇼핑몰</a></li>
+							</ul>
+						</li>
+											</ul>
+				</div>
+				<div class="ft_wr2_right">
+					<div>고객 서비스센터</div>
+					<div class="c_red">TEL : 031.726.5076</div>
+					<div>(13636) 경기도 성남시 분당구 성남대로 43번길 10, 605호<br>Fax :  031-726-5016<br>E-mail : jive@j3d.kr</div>
+					<ul> 
+						<li><a href="javascript:;"><img src="../jive/img/sns3.png" alt="youtube"></a></li>
+						<li><a href="javascript:;"><img src="../jive/img/sns2.png" alt="facebook"></a></li>
+						<li><a href="javascript:;"><img src="../jive/img/sns1.png" alt="blog"></a></li>
+					</ul>
+				</div>
+				<div id="ft_link">
+					<a href="javascript:;" style="color:#ffcc00;">개인정보처리방침</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="javascript:;">이용약관</a><br>
+					<div id="ft_copy">Copyright &copy; 자이브솔루션즈. All rights reserved.</div>
+
+									</div>
+			</div>
+		</div>
+	</div>
+	<div class="ft_wr2">
+		<div id="ft_add">
+			<span>경기도 성남시 분당구 성남대로 43번길 10, 605호 (구미동, 하나EZ타워)&nbsp;&nbsp;&nbsp;&nbsp;주식회사 자이브솔루션즈&nbsp;&nbsp;&nbsp;&nbsp;대표이사 : 윤두훈&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호 : 208-86-01155&nbsp;&nbsp;&nbsp;&nbsp;통신판매업 신고번호 : 제 2018-성남분당A-0301호</span>
+			<span>Tel : 031-726-5076&nbsp;&nbsp;&nbsp;&nbsp;Fax : 031-726-5016&nbsp;&nbsp;&nbsp;&nbsp;E-mail : jive@j3d.kr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;본 사이트의 콘텐츠는 저작권법의 보호를 받은 바, 무단 전제, 복사, 배포 등을 금합니다.</span>
+		</div>
+	</div>
+
+	<button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
+
+</div>
+
+
+<!-- } 하단 끝 -->
+
+
+</body>
+</html>
